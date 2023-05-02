@@ -1,0 +1,15 @@
+CREATE DATABASE catalog;
+
+CREATE TABLE author (
+  id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  first_name VARCHAR(250) NOT NULL,
+  last_name VARCHAR(250) NOT NULL,
+  items []
+);
+
+CREATE TABLE game (
+  id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  multiplayer BOOLEAN NOT NULL,
+  last_played_at DATE NOT NULL,
+  CONSTRAINT fk_item FOREIGN KEY(id) REFERENCES item(id)
+);
