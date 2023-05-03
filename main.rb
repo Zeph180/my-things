@@ -120,7 +120,7 @@ def list_books(books)
   else
     puts 'Books:'
     books.each do |book|
-      puts "- #{book.title}, by #{book.author} (#{book.published_date})"
+      puts "- #{book.name}, by #{book.author} (#{book.published_date})"
     end
   end
 end
@@ -136,7 +136,7 @@ def list_labels(labels)
   end
 end
 
-def add_book(labels)
+def add_book(labels, items)
   puts 'Enter book details:'
   print 'Title: '
   title = gets.chomp
@@ -156,6 +156,7 @@ def add_book(labels)
     puts 'Label not found.'
   else
     label.add_item(book)
+    items << book
     puts 'Book added successfully.'
   end
 end
@@ -192,7 +193,7 @@ def main
     when 2
       list_labels(labels)
     when 3
-      add_book(labels)
+      add_book(labels, items)
     when 4
       add_label(labels)
     when 5
