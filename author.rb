@@ -1,6 +1,7 @@
+require_relative 'item'
 class Author
-  attr_accessor :first_name, :last_name, :id
-  attr_reader :items
+  attr_accessor :first_name, :last_name, :items
+  attr_reader :id
 
   def initialize(first_name, last_name)
     @id = Random.rand(1..1000)
@@ -10,7 +11,7 @@ class Author
   end
 
   def add_item(item)
-    @items.push(item)
-    item.author = self
+    @items << item unless @items.include?(item)
+    item.author = self unless item.author == self
   end
 end
