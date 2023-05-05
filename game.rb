@@ -1,15 +1,14 @@
 class Game < Item
-    attr_accessor :multiplayer, :last_played_at
+  attr_accessor :multiplayer, :last_played_at
 
-    def initialize(multiplayer,last_played_at)
-        super(multiplayer,last_played_at)
-        @multiplayer = multiplayer
-        @last_played_at = last_played_at
-    end
+  def initialize(multiplayer, last_played_at)
+    @multiplayer = multiplayer
+    @last_played_at = last_played_at
+  end
 
-    def can_be_archived?
-        super || @last_played_at > 2
+  def can_be_archived?(item)
+    return true if super(item) || @last_played_at >= 2
 
     false
-    end
+  end
 end
