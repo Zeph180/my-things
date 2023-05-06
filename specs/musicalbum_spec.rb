@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../musicalbum'
 describe MusicAlbum do
   before :each do

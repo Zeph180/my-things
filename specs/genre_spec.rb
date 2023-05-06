@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../genre'
 require_relative '../item'
 describe Genre do
@@ -21,7 +23,3 @@ describe Genre do
     expect(genre.items).to eq([book])
   end
 end
-
-
-
-

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'json'
 module GameData
   def save_game_data

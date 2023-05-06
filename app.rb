@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative './modules/create_items'
 require_relative './modules/list_items'
 require_relative 'label'
