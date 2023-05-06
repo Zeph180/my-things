@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative '../book'
 require_relative '../game'
 require_relative '../musicalbum'
