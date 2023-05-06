@@ -21,7 +21,3 @@ describe Genre do
     expect(genre.items).to eq([book])
   end
 end
-
-
-
-
