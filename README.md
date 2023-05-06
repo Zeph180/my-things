@@ -38,7 +38,7 @@
 
 ## 🚀 Video Demo <a name="video-demo"></a>
 
-- [Video Presentation](limk here)
+- [Demo Link](https://www.loom.com/share/f25d063551874e75ac843031c8d4e27a)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,6 +95,14 @@ ruby main.rb
 - GitHub: [@AyoMoses1](https://github.com/AyoMoses1)
 - Twitter: [@AyoMoses](https://twitter.com/Ayo_Moses1)
 - LinkedIn: [Ayo Moses](https://www.linkedin.com/in/ayomoses/)
+
+
+👤 **Rudy Menekam**
+
+- GitHub: [@githubhandle](https://github.com/Rudy-Menekam)
+- Twitter: [@twitterhandle](https://twitter.com/MenekamR)
+- LinkedIn: [linkedIn](https://www.linkedin.com/in/menekam-rudy/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
